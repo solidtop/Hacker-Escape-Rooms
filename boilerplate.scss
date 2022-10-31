@@ -1,0 +1,112 @@
+@import 'mixins';
+
+$wide-screen-breakpoint: 720px;
+
+$black: black;
+$white: white;
+$red: #E3170A;
+$darkblue: #011827;
+$blue: #36769D;
+$lightblue: #8ACFE5;
+
+$border: 10px;
+$border-radius: 4px;
+$border-radius-big: 8px;
+
+$logo-width: 128px;
+$logo-height: 82px;
+$bg-image-size: 468px;
+$portrait-size: 72px;
+$portrait-size-desktop: 96px;
+$card-size: 363px;
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $black;
+    background-color: $white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.button {
+    display: block;
+    width: 308px;
+    height: 66px;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 1.33rem;
+    font-weight: bold;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        background-color: yellow;
+    }
+}
+
+.button--red {
+    color: $white;
+    background-color: $red;
+}
+
+.button--blue {
+    color: black;
+    background-color: $lightblue;
+}
+
+.button--desktop {
+    display: none;
+
+    @include wide-screen {
+        display: block;
+    }
+}
+
+.button-inverted {
+    color: $lightblue;
+    background-color: $darkblue;
+    border: 2px solid $lightblue;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    color: $white;
+    text-decoration: none;
+}
+
+.headline {
+    margin: 2em 0;
+    font-size: 1.7rem;
+    font-weight: normal;
+
+    @include wide-screen {
+        font-size: 2rem;
+    }
+}
+
+.headline--center {
+    text-align: center;
+}
+
+.headline--left {
+    margin-left: 0;
+    text-align: left;
+}
+
+.img {
+    width: 100%;
+}
