@@ -1,5 +1,0 @@
-@mixin wide-screen {
-    @media screen and (min-width: $wide-screen-breakpoint) {
-        @content;
-    }
-}

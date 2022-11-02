@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         
-        <img class="header__logo" src="./assets/icon.png" alt=""> 
+        <img class="header__logo" src="./assets/logo.jpg" alt="logo"> 
         <h1 class="header__title">Hacker Escape Rooms</h1>
         
         <button class="button-hamburger">
@@ -23,150 +23,186 @@
 
     </header>
 
-    <nav class="main-navbar">
-        <ul class="main-navbar__list list">
-            <li><a class="main-navbar__list-link link" href="">Play online</a></li>
-            <li><a class="main-navbar__list-link link" href="">Play on-site</a></li>
-            <li><a class="main-navbar__list-link link" href="">The Story</a></li>
-            <li><a class="main-navbar__list-link link" href="">Contact us</a></li>  
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li><a class="navbar__list-link link" href="">Play online</a></li>
+            <li><a class="navbar__list-link link" href="">Play on-site</a></li>
+            <li><a class="navbar__list-link link" href="">The Story</a></li>
+            <li><a class="navbar__list-link link" href="">Contact us</a></li>  
         </ul>
     </nav>
 
-    <main class="main-content">
+    <main class="content">
 
-        <img class="bg-image" src="./assets/hacking.png" alt="">
+        <picture>
+            <source srcset="./assets/bg-image-big.jpg"
+            media="(min-width: 720px)">
+            <img class="bg-img img" src="./assets/bg-image-small.jpg" alt="background image">
+        </picture>
+        
 
         <section class="challenges challenges--top">
-            <button class="button--red button--desktop button">Online challenges</button>
+            <button class="button--red button--desktop-only button">Online challenges</button>
             <button class="button--blue button">On-site challenges</button>
             <a class="challenges__link link" href="">Online Challenges</a>
         </section>
 
-        <div class="grid-quotes grid">
+        <section>
+            <div class="grid--quotes grid">
+                <div class="quote">
+                    <picture>
+                        <source srcset="./assets/portrait-big.jpg" media="(min-width: 720px)">
+                        <img class="quote__portrait" src="./assets/portrait-small.jpg" alt="generic-portrait">
+                    </picture>
+                    <p class="quote__description">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it
+                    <span class="quote__author">John Doe, visited us in September 2021</span></p>
+                </div>
 
-            <div class="quote">
-                <img class="quote__portrait" src="./assets/generic-portrait.png" alt="generic-portrait">
-                <p class="quote__description">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it
-                <span class="quote__author">John Doe, visited us in September 2021</span></p>
+                <div class="quote">
+                    <picture>
+                        <source srcset="./assets/portrait-big.jpg" media="(min-width: 720px)">
+                        <img class="quote__portrait" src="./assets/portrait-small.jpg" alt="generic-portrait">
+                    </picture>
+                    <p class="quote__description">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it
+                    <span class="quote__author">John Doe, visited us in September 2021</span></p>
+                </div>
             </div>
-            <div class="quote">
-                <img class="quote__portrait" src="./assets/generic-portrait.png" alt="generic-portrait">
-                <p class="quote__description">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it
-                <span class="quote__author">John Doe, visited us in September 2021</span></p>
-            </div>
+        </section>
 
-        </div>
-
-        <section class="popular-challenges">
-
+        <section>
             <h2 class="headline headline--center">Popular challenges right now</h2>
 
-            <div class="grid-cards grid">
+            <div class="grid--cards grid">
+
                 <div class="card">
-                    <img class="card__banner" src="./assets/hacking.png" alt="banner">
-                    <div class="card-wrapper">
+                    <img class="card__banner img" src="./assets/card-banner.jpg" alt="card-banner">
+
+                    <div class="card__wrapper">
                         <h4 class="card__subtitle">Title of room (on-site)</h4>
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star--unfilled" src="./assets/Star 5.svg" alt="star-unfilled">
-                        <p class="card__participants">2-6 participants</p>
+
+                        <div class="card__rating">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star" src="./assets/Star 5.svg" alt="star">
+                            <p class="rating__participants">2-6 participants</p>
+                        </div>
+                       
                         <p class="card__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
                         <button class="button--red button">Book this room</button>
                     </div>
                 </div>
+
                 <div class="card">
-                    <img class="card__banner" src="./assets/hacking.png" alt="banner">
-                    <div class="card-wrapper">
+                    <img class="card__banner img" src="./assets/card-banner.jpg" alt="card-banner">
+
+                    <div class="card__wrapper">
                         <h4 class="card__subtitle">Title of room (on-site)</h4>
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star card__star--unfilled" src="./assets/Star 5.svg" alt="star-unfilled">
-                        <p class="card__participants">2-6 participants</p>
+
+                        <div class="card__rating rating">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star" src="./assets/Star 5.svg" alt="star">
+                            <p class="rating__participants">2-6 participants</p>
+                        </div>
+
                         <p class="card__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
                         <button class="button--red button">Book this room</button>
                     </div>
                 </div>
+
                 <div class="card">
-                    <img class="card__banner" src="./assets/hacking.png" alt="banner">
-                    <div class="card-wrapper">
+                    <img class="card__banner img" src="./assets/card-banner.jpg" alt="card-banner">
+                    <div class="card__wrapper">
                         <h4 class="card__subtitle">Title of room (on-site)</h4>
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star" src="./assets/Star 1.svg" alt="star">
-                        <img class="card__star-unfilled" src="./assets/Star 5.svg" alt="star-unfilled">
-                        <p class="card__participants">2-6 participants</p>
+                        
+                        <div class="card__rating rating">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star rating__star--filled" src="./assets/Star 1.svg" alt="star-filled">
+                            <img class="rating__star" src="./assets/Star 5.svg" alt="star">
+                            <p class="rating__participants">2-6 participants</p>
+                        </div>
+
                         <p class="card__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
                         <button class="button--red button">Book this room</button>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </section>
 
         <section class="challenges">
-            <button class="button--red button--desktop button">Online challenges</button> 
+            <button class="button--red button--desktop-only button">Online challenges</button> 
             <button class="button--blue button">On-site challenges</button>
             <a class="challenges__link link" href="">Online Challenges</a>
         </section>
 
-        <section class="full-story">
-            <p class="full-story__description">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
-            <button class="button button-inverted">Read the full story</button>
+        <section class="story">
+            <p class="story__description">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+            <button class="button-inverted button">Read the full story</button>
         </section>
 
-        <section class="info">
 
-            <img class="info__img img" src="./assets/stock-coding1.jpg" alt="stock-coding1">
-            <div class="info-wrapper">
-                <h2 class="headline--left headline">Play with your friends or build your team stronger at work</h2>
-                <p class="info__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                <button class="button--red button">Book on-site today</button>
+        <section class="info-cards">
+            <div class="info-card">
+                <picture>
+                    <source srcset="./assets/stock1-big.jpg" media="(min-width: 720px)">
+                    <img class="info-card__img" src="./assets/stock1-small.jpg" alt="stock-image1">
+                </picture>
+
+                <div class="info-card__wrapper">
+                    <h2 class="info-card__subtitle">Play with your friends or build your team stronger at work</h2>
+                    <p class="info-card__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                    <button class="button--red button">Book on-site today</button>
+                </div>
             </div>
 
-        </section>
+            <div class="info-card">
+                <picture>
+                    <source srcset="./assets/stock2-big.jpg" media="(min-width: 720px)">
+                    <img class="info-card__img first-pos" src="./assets/stock2-small.jpg" alt="stock-image2">
+                </picture>
 
-        <section class="info">
+                <div class="info-card__wrapper last-pos">
+                    <h2 class="info-card__subtitle">Play online or visit our venue for one of our 25 escape rooms</h2>
+                    <p class="info-card__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                    <button class="button--red button">Book on-site today</button>
+                </div>
 
-            <img class="info__img img first-pos" src="./assets/stock-coding2.jpg" alt="stock-coding2">
-            <div class="info-wrapper last-pos">
-                <h2 class="headline--left headline">Play with your friends or build your team stronger at work</h2>
-                <p class="info__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                <button class="button--red button">Book on-site today</button>
             </div>
-
         </section>
 
     </main>
 
     <footer class="footer">
         
-        <section class="esc-rooms">
-            <h3 class="headline--left headline">[Esc] Hacker Escape Rooms</h3>
-            <p class="esc-rooms__description">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+        <section class="esc-rooms footer__section">
+            <h3 class="footer__section-headline">[Esc] Hacker Escape Rooms</h3>
+            <p class="footer__section-description">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
         </section>
 
-        <section class="site-map">
-            <h3 class="headline--left headline">Site map</h3>
-            <ul class="site-map__list list">
-                <li><a class="site-map__list-link link" href="">The Story</a></li>
-                <li><a class="site-map__list-link link" href="">Contact Us</a></li>
-                <li><a class="site-map__list-link link" href="">Legal</a></li>
+        <section class="site-map footer__section">
+            <h3 class="footer__section-headline">Site map</h3>
+            <ul class="footer__section-list">
+                <li><a href="">The Story</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Legal</a></li>
                 <br>
-                <li><a class="site-map__list-link link" href="">Play online</a></li>
-                <li><a class="site-map__list-link link" href="">Play on-site</a></li>
+                <li><a href="">Play online</a></li>
+                <li><a href="">Play on-site</a></li>
             </ul>
         </section>
 
-        <section class="socials">
-            <h3 class="headline--left headline">Follow us on</h3>
-            <ul class="socials__list list">
-                <li><a class="socials__list-link link" href="">Facebook</a></li>
-                <li><a class="socials__list-link link" href="">Instagram</a></li>
-                <li><a class="socials__list-link link" href="">Twitter</a></li>
+        <section class="socials footer__section">
+            <h3 class="footer__section-headline">Follow us on</h3>
+            <ul class="footer__section-list">
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Twitter</a></li>
             </ul>
         </section>
 
