@@ -15,10 +15,10 @@
         <img class="header__logo" src="./assets/logo.jpg" alt="logo"> 
         <h1 class="header__title">Hacker Escape Rooms</h1>
         
-        <button class="button-hamburger">
-            <div class="button-hamburger__line"></div>
-            <div class="button-hamburger__line"></div>
-            <div class="button-hamburger__line"></div>
+        <button class="btn-hamburger">
+            <div class="btn-hamburger__line"></div>
+            <div class="btn-hamburger__line"></div>
+            <div class="btn-hamburger__line"></div>
         </button>
 
     </header>
@@ -40,34 +40,31 @@
             <img class="bg-img img" src="./assets/bg-image-small.jpg" alt="background image">
         </picture>
         
-
-        <section class="challenges challenges--top">
-            <button class="button--red button--desktop-only button">Online challenges</button>
-            <button class="button--blue button">On-site challenges</button>
+        <div class="challenges challenges--top">
+            <button class="btn__primary--on-white btn--desktop btn">Online challenges</button>
+            <button class="btn__secondary--on-white btn">On-site challenges</button>
             <a class="challenges__link link" href="">Online Challenges</a>
-        </section>
+        </div>
 
-        <section>
-            <div class="grid--quotes grid">
-                <div class="quote">
-                    <picture>
-                        <source srcset="./assets/portrait-big.jpg" media="(min-width: 720px)">
-                        <img class="quote__portrait" src="./assets/portrait-small.jpg" alt="generic-portrait">
-                    </picture>
-                    <p class="quote__description">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it
-                    <span class="quote__author">John Doe, visited us in September 2021</span></p>
-                </div>
-
-                <div class="quote">
-                    <picture>
-                        <source srcset="./assets/portrait-big.jpg" media="(min-width: 720px)">
-                        <img class="quote__portrait" src="./assets/portrait-small.jpg" alt="generic-portrait">
-                    </picture>
-                    <p class="quote__description">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it
-                    <span class="quote__author">John Doe, visited us in September 2021</span></p>
-                </div>
+        <div class="grid--quotes grid">
+            <div class="quote-card">
+                <picture>
+                    <source srcset="./assets/portrait-big.jpg" media="(min-width: 720px)">
+                    <img class="quote-card__portrait" src="./assets/portrait-small.jpg" alt="generic-portrait">
+                </picture>
+                <p class="quote-card__description">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it
+                <span class="quote-card__author">John Doe, visited us in September 2021</span></p>
             </div>
-        </section>
+
+            <div class="quote-card">
+                <picture>
+                    <source srcset="./assets/portrait-big.jpg" media="(min-width: 720px)">
+                    <img class="quote__portrait" src="./assets/portrait-small.jpg" alt="generic-portrait">
+                </picture>
+                <p class="quote-card__description">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it
+                <span class="quote-card__author">John Doe, visited us in September 2021</span></p>
+            </div>
+        </div>
 
         <section class="popular-challenges">
             <h2 class="headline headline--center">Popular challenges right now</h2>
@@ -90,7 +87,7 @@
                         </div>
                        
                         <p class="challenge-card__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                        <button class="button--red button">Book this room</button>
+                        <button class="btn__primary--on-white btn">Book this room</button>
                     </div>
                 </div>
 
@@ -110,7 +107,7 @@
                         </div>
 
                         <p class="challenge-card__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                        <button class="button--red button">Book this room</button>
+                        <button class="btn__primary--on-white btn">Book this room</button>
                     </div>
                 </div>
 
@@ -129,25 +126,25 @@
                         </div>
 
                         <p class="challenge-card__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                        <button class="button--red button">Book this room</button>
+                        <button class="btn__primary--on-white btn">Book this room</button>
                     </div> 
                 </div>
             </div>
         </section>
 
-        <section class="challenges">
-            <button class="button--red button--desktop-only button">Online challenges</button> 
-            <button class="button--blue button">On-site challenges</button>
+        <div class="challenges">
+            <button class="btn__primary--on-white btn">Online challenges</button> 
+            <button class="btn__secondary--on-white btn--desktop btn">On-site challenges</button>
             <a class="challenges__link link" href="">Online Challenges</a>
-        </section>
+        </div>
 
-        <section class="story">
-            <p class="story__description">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
-            <button class="button-inverted button">Read the full story</button>
-        </section>
+        <div class="about-us">
+            <p class="about-us__description">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+            <button class="btn__primary--on-dark btn">Read the full story</button>
+        </div>
 
 
-        <section class="info-cards">
+        <div class="info-cards">
             <div class="info-card">
                 <picture>
                     <source srcset="./assets/stock1-big.jpg" media="(min-width: 720px)">
@@ -157,7 +154,7 @@
                 <div class="info-card__wrapper">
                     <h2 class="info-card__subtitle">Play with your friends or build your team stronger at work</h2>
                     <p class="info-card__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                    <button class="button--red button">Book on-site today</button>
+                    <button class="btn__primary--on-white btn">Book on-site today</button>
                 </div>
             </div>
 
@@ -170,16 +167,15 @@
                 <div class="info-card__wrapper last-pos">
                     <h2 class="info-card__subtitle">Play online or visit our venue for one of our 25 escape rooms</h2>
                     <p class="info-card__description">Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
-                    <button class="button--red button">Book on-site today</button>
+                    <button class="btn__primary--on-white btn">Book on-site today</button>
                 </div>
 
             </div>
-        </section>
+        </div>
 
     </main>
 
     <footer class="footer">
-        
         <section class="esc-rooms footer__section">
             <h3 class="footer__section-headline">[Esc] Hacker Escape Rooms</h3>
             <p class="footer__section-description">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
@@ -205,7 +201,6 @@
                 <li><a href="">Twitter</a></li>
             </ul>
         </section>
-
     </footer>
 </body>
 </html>

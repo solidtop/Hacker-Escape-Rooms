@@ -55,7 +55,7 @@
     margin-top: 2.25em;
     margin-bottom: 3.5em;
 
-    .button {
+    .btn {
         margin: auto;
     }
 
@@ -80,7 +80,7 @@
             transform: translateY(-50%);
         }
 
-        .button {
+        .btn {
             margin: 0 .35em;
         }
 
@@ -107,11 +107,15 @@
     }
 }
 
-.quote {
+.quote-card {
     max-width: $quote-width-max;
     display: flex;
     margin: 0 1em;
     overflow: hidden;
+
+    &__portrait {
+        border-radius: 50%;
+    }
 
     &__description {
         margin-left: 1em;
@@ -141,7 +145,7 @@
 
 .challenge-card {
     min-width: $challenge-card-width;
-    border-radius:$border-radius-big;
+    border-radius: $border-radius-big;
     box-shadow: 0 0 10px rgba(0, 0, 0, .25);
     overflow: visible;
 
@@ -177,7 +181,7 @@
         font-size: $font-size-normal;
     }
 
-    .button {
+    .btn {
         width: 180px;
         height: 44px;
         margin-left: auto;
@@ -186,7 +190,7 @@
     }
 }
 
-.story {
+.about-us {
     padding: 5.75em 1em;
     background-color: $darkblue;
 
@@ -202,7 +206,7 @@
         color: $white;
     }
 
-    .button {
+    .btn {
         margin: auto;
         margin-top: 2em;
 
@@ -296,7 +300,7 @@
 
 /* || GENERAL STYLES */
 
-.button {
+.btn {
     display: block;
     width: 308px;
     height: 66px;
@@ -308,21 +312,27 @@
 
     &:hover {
         cursor: pointer;
-        background-color: yellow;
+        filter: brightness(.85);
+    }    
+
+    &__primary--on-white {
+        color: $white;
+        background-color: $red;
+    }
+
+    &__primary--on-dark {
+        color: $lightblue;
+        background-color: $darkblue;
+        border: 2px solid $lightblue;
+    }
+
+    &__secondary--on-white {
+        color: $black;
+        background-color: $lightblue;
     }
 }
 
-.button--red {
-    color: $white;
-    background-color: $red;
-}
-
-.button--blue {
-    color: black;
-    background-color: $lightblue;
-}
-
-.button--desktop-only {
+.btn--desktop {
     display: none;
 
     @include wide-screen {
@@ -330,13 +340,7 @@
     }
 }
 
-.button-inverted {
-    color: $lightblue;
-    background-color: $darkblue;
-    border: 2px solid $lightblue;
-}
-
-.button-hamburger {
+.btn-hamburger {
     margin-bottom: auto;
     margin-left: auto;
     padding: 0 0 2em 2em;
@@ -357,7 +361,7 @@
 }
 
 .headline {
-    margin: 1em 0;
+    margin: 1em;
     font-size: $font-size-large;
     font-weight: normal;
 
