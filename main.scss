@@ -125,7 +125,7 @@
     }
 }
 
-.grid--cards {
+.grid--challenge-cards {
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5em;
     margin: 1em 0;
@@ -133,7 +133,7 @@
     overflow: scroll;
 }
 
-.card {
+.challenge-card {
     min-width: $challenge-card-width;
     border-radius:$border-radius-big;
     box-shadow: 0 0 10px rgba(0, 0, 0, .25);
@@ -141,11 +141,6 @@
 
     &__wrapper {
         padding: 1em;
-    }
-
-    &__banner {
-        border-radius: $border-radius-big $border-radius-big 0 0;
-        min-height: 219px;
     }
 
     &__subtitle {

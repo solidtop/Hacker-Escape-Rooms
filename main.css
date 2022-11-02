@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   color: black;
@@ -142,7 +144,7 @@ a {
   font-style: normal;
 }
 
-.grid--cards {
+.grid--challenge-cards {
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5em;
   margin: 1em 0;
@@ -150,44 +152,40 @@ a {
   overflow: scroll;
 }
 
-.card {
+.challenge-card {
   min-width: 363px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   overflow: visible;
 }
-.card__wrapper {
+.challenge-card__wrapper {
   padding: 1em;
 }
-.card__banner {
-  border-radius: 8px 8px 0 0;
-  min-height: 219px;
-}
-.card__subtitle {
+.challenge-card__subtitle {
   font-size: 1.75rem;
   font-weight: normal;
 }
-.card__rating {
+.challenge-card__rating {
   display: flex;
   align-items: center;
 }
-.card__rating .rating__star {
+.challenge-card__rating .rating__star {
   margin: 0 0.3em;
 }
-.card__rating .rating__participants {
+.challenge-card__rating .rating__participants {
   margin-left: 0.5em;
   font-size: 0.875rem;
 }
 @media screen and (min-width: 720px) {
-  .card__rating .rating__participants {
+  .challenge-card__rating .rating__participants {
     margin-left: auto;
   }
 }
-.card__description {
+.challenge-card__description {
   margin: 1em 0;
   font-size: 1.125rem;
 }
-.card .button {
+.challenge-card .button {
   width: 180px;
   height: 44px;
   margin-left: auto;
