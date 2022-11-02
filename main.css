@@ -39,6 +39,7 @@ a {
   max-height: 82px;
 }
 .header__title {
+  width: 78px;
   margin: auto 0 0 0.5em;
   font-size: 1.5rem;
   font-weight: bold;
@@ -46,6 +47,7 @@ a {
 }
 @media screen and (min-width: 720px) {
   .header__title {
+    width: auto;
     font-size: 2.5rem;
   }
 }
@@ -334,7 +336,7 @@ a {
 .button-hamburger {
   margin-bottom: auto;
   margin-left: auto;
-  padding: 0 0 3em 8em;
+  padding: 0 0 2em 2em;
   background-color: inherit;
   border: none;
 }
