@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacker Escape Rooms</title>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
 </head>
@@ -34,11 +34,7 @@
 
     <main class="content">
 
-        <picture>
-            <source srcset="./assets/bg-image-big.jpg"
-            media="(min-width: 720px)">
-            <img class="bg-img img" src="./assets/bg-image-small.jpg" alt="background image">
-        </picture>
+        <img class="bg-img img" src="./assets/hacker.png" alt="background image">
         
         <div class="challenges challenges--top">
             <button class="btn__primary--on-white btn--desktop btn">Online challenges</button>
@@ -46,21 +42,15 @@
             <a class="challenges__link link" href="">Online Challenges</a>
         </div>
 
-        <div class="grid--quotes grid">
+        <div class="quotes-container grid">
             <div class="quote-card">
-                <picture>
-                    <source srcset="./assets/portrait-big.jpg" media="(min-width: 720px)">
-                    <img class="quote-card__portrait" src="./assets/portrait-small.jpg" alt="generic-portrait">
-                </picture>
+                <img class="quote-card__portrait" src="./assets/portrait.png" alt="generic-portrait">
                 <p class="quote-card__description">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it
                 <span class="quote-card__author">John Doe, visited us in September 2021</span></p>
             </div>
 
             <div class="quote-card">
-                <picture>
-                    <source srcset="./assets/portrait-big.jpg" media="(min-width: 720px)">
-                    <img class="quote__portrait" src="./assets/portrait-small.jpg" alt="generic-portrait">
-                </picture>
+                <img class="quote-card__portrait" src="./assets/portrait.png" alt="generic-portrait">
                 <p class="quote-card__description">This is a quote about how amazing this place is and how much fun me and my friends had when we tried it
                 <span class="quote-card__author">John Doe, visited us in September 2021</span></p>
             </div>
@@ -69,10 +59,10 @@
         <section class="popular-challenges">
             <h2 class="headline headline--center">Popular challenges right now</h2>
 
-            <div class="grid--challenge-cards grid">
+            <div class="challenge-cards-container grid">
 
                 <div class="challenge-card">
-                    <img class="challenge-card__banner img" src="./assets/card-banner.jpg" alt="card-banner">
+                    <img class="challenge-card__banner img" src="./assets/hacker.png" alt="card-banner">
 
                     <div class="challenge-card__wrapper">
                         <h4 class="challenge-card__subtitle">Title of room (on-site)</h4>
@@ -92,7 +82,7 @@
                 </div>
 
                 <div class="challenge-card">
-                    <img class="challenge-card__banner img" src="./assets/card-banner.jpg" alt="card-banner">
+                    <img class="challenge-card__banner img" src="./assets/hacker.png" alt="card-banner">
 
                     <div class="challenge-card__wrapper">
                         <h4 class="challenge-card__subtitle">Title of room (on-site)</h4>
@@ -112,7 +102,7 @@
                 </div>
 
                 <div class="challenge-card">
-                    <img class="challenge-card__banner img" src="./assets/card-banner.jpg" alt="card-banner">
+                    <img class="challenge-card__banner img" src="./assets/hacker.png" alt="card-banner">
                     <div class="challenge-card__wrapper">
                         <h4 class="challenge-card__subtitle">Title of room (on-site)</h4>
                         
@@ -132,24 +122,21 @@
             </div>
         </section>
 
-        <div class="challenges">
+        <section class="challenges">
             <button class="btn__primary--on-white btn">Online challenges</button> 
             <button class="btn__secondary--on-white btn--desktop btn">On-site challenges</button>
             <a class="challenges__link link" href="">Online Challenges</a>
-        </div>
+        </section>
 
-        <div class="about-us">
+        <section class="about-us">
             <p class="about-us__description">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
             <button class="btn__primary--on-dark btn">Read the full story</button>
-        </div>
+        </section>
 
 
-        <div class="info-cards">
+        <div class="info-cards-container">
             <div class="info-card">
-                <picture>
-                    <source srcset="./assets/stock1-big.jpg" media="(min-width: 720px)">
-                    <img class="info-card__img" src="./assets/stock1-small.jpg" alt="stock-image1">
-                </picture>
+                <img class="info-card__img img" src="./assets/stock1.jpg" alt="stock-image1">
 
                 <div class="info-card__wrapper">
                     <h2 class="info-card__subtitle">Play with your friends or build your team stronger at work</h2>
@@ -159,10 +146,7 @@
             </div>
 
             <div class="info-card">
-                <picture>
-                    <source srcset="./assets/stock2-big.jpg" media="(min-width: 720px)">
-                    <img class="info-card__img first-pos" src="./assets/stock2-small.jpg" alt="stock-image2">
-                </picture>
+                <img class="info-card__img img" src="./assets/stock2.jpg" alt="stock-image2">
 
                 <div class="info-card__wrapper last-pos">
                     <h2 class="info-card__subtitle">Play online or visit our venue for one of our 25 escape rooms</h2>
