@@ -215,12 +215,12 @@ a {
 }
 
 .about-us {
-  padding: 5.75em 1em;
+  padding: 20% 1em;
   background-color: #011827;
 }
 @media screen and (min-width: 720px) {
   .about-us {
-    padding: 7.5em;
+    padding: 8em;
   }
 }
 .about-us__description {
@@ -281,6 +281,7 @@ a {
   font-size: 1.5rem;
   margin-top: 1em;
   margin-bottom: 2.25em;
+  margin-bottom: 10%;
 }
 @media screen and (min-width: 720px) {
   .info-tile__description {

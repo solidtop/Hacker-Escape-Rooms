@@ -18,7 +18,7 @@
         font-weight: bold;
         color: $white;
 
-        @include wide-screen {
+        @include wide-screen { //TODO: find way to replace width constraint
             width: auto;
             font-size: $font-size-title;
         }
@@ -202,11 +202,11 @@
 }
 
 .about-us {
-    padding: 5.75em 1em;
+    padding: 20% 1em;
     background-color: $darkblue;
 
     @include wide-screen {
-        padding: 7.5em;
+        padding: 8em;
     }
 
     &__description {
@@ -271,6 +271,7 @@
         font-size: $font-size-medium;
         margin-top: 1em;
         margin-bottom: 2.25em;
+        margin-bottom: 10%;
 
         @include wide-screen {
             margin-bottom: 1em;
