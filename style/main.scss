@@ -37,11 +37,11 @@
     &__list {
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
 
         &-link {
             font-size: $font-size-medium;
             font-weight: bold;
+            text-align: center;
         
             &:hover {
                 color: $lightblue;
