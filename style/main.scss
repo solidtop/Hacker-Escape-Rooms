@@ -1,6 +1,5 @@
 @import 'boilerplate';
 
-/* || Header and navbar */
 .header {
     display: flex;
     padding: 1.25em;
@@ -18,7 +17,7 @@
         font-size: $font-size-medium;
         font-weight: bold;
         color: $white;
-    
+
         @include wide-screen {
             width: auto;
             font-size: $font-size-title;
@@ -228,15 +227,11 @@
     }
 }
 
-.info-cards-container {
-    margin-bottom: 4em;
-
-    @include wide-screen {
-        margin-bottom: 12em;
-    }
+.info-tiles-container {
+    margin-bottom: 15%;
 }
 
-.info-card {
+.info-tile {
     display: grid;
     justify-items: center;
     align-items: center;
