@@ -138,12 +138,12 @@ a {
   margin: 0 1em;
   overflow: hidden;
 }
-.quote-card__portrait {
+.quote-card__headshot {
   max-height: 72px;
   border-radius: 50%;
 }
 @media screen and (min-width: 720px) {
-  .quote-card__portrait {
+  .quote-card__headshot {
     max-height: 96px;
   }
 }

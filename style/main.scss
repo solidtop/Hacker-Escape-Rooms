@@ -116,12 +116,12 @@
     margin: 0 1em;
     overflow: hidden;
 
-    &__portrait {
-        max-height: $portrait-height-min;
+    &__headshot {
+        max-height: $headshot-height-min;
         border-radius: 50%;
 
         @include wide-screen {
-            max-height: $portrait-height-max;
+            max-height: $headshot-height-max;
         }
     }
 
