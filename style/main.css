@@ -151,12 +151,12 @@ q:before, q:after {
     max-height: 96px;
   }
 }
-.quote-card__description {
+.quote-card__blockquote {
   margin-left: 1em;
   font-size: 1.5rem;
   font-style: italic;
 }
-.quote-card__author {
+.quote-card__cite {
   display: block;
   margin-top: 0.3em;
   font-size: 1.125rem;
@@ -280,6 +280,7 @@ q:before, q:after {
 }
 .info-tile__subtitle {
   font-size: 2rem;
+  font-weight: bold;
 }
 .info-tile__description {
   font-size: 1.5rem;

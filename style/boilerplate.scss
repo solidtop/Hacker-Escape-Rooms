@@ -27,8 +27,6 @@ $headshot-height-min: 72px;
 $headshot-height-max: 96px;
 $quote-width-max: 520px;
 $challenge-card-width: 363px;
-$info-card-height-max: 300px;
-$info-card-height-min: 460px;
 
 html {
     box-sizing: border-box;
@@ -57,10 +55,6 @@ ul {
 a {
     color: $white;
     text-decoration: none;
-}
-
-q:before, q:after {
-    content: "";
 }
 
 /* || MIXINS */
