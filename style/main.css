@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+q:before, q:after {
+  content: "";
+}
+
 /* || MIXINS */
 .header {
   display: flex;
