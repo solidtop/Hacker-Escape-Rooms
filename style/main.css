@@ -125,22 +125,28 @@ q:before, q:after {
 }
 
 .quotes-container {
-  grid-template-rows: 0;
+  display: flex;
+  justify-content: space-around;
   margin: 4em 0;
 }
 @media screen and (min-width: 720px) {
   .quotes-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
     margin: 4.5em 5em;
   }
 }
 
 .quote-card {
   max-width: 520px;
-  display: flex;
+  display: none;
   margin: 0 1em;
-  overflow: hidden;
+}
+.quote-card:nth-child(1) {
+  display: flex;
+}
+@media screen and (min-width: 720px) {
+  .quote-card {
+    display: flex;
+  }
 }
 .quote-card__headshot {
   max-height: 72px;
@@ -168,10 +174,8 @@ q:before, q:after {
 }
 
 .challenge-cards-container {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5em;
-  margin: 1em 0;
-  padding: 10px 3em;
+  display: flex;
+  padding: 0 2em;
   overflow: scroll;
 }
 
@@ -179,6 +183,7 @@ q:before, q:after {
   min-width: 363px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  margin: 1.2em;
 }
 .challenge-card__banner {
   border-radius: 8px 8px 0 0;
@@ -207,7 +212,7 @@ q:before, q:after {
   }
 }
 .challenge-card__description {
-  margin: 1em 0;
+  margin: 1.5em 0;
   font-size: 1.125rem;
 }
 .challenge-card .btn {
@@ -373,7 +378,7 @@ q:before, q:after {
 }
 
 .headline {
-  margin: 1em;
+  margin: 0.5em 0;
   font-size: 2rem;
   font-weight: normal;
 }
