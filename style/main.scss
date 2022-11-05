@@ -232,33 +232,38 @@
     margin-bottom: 15%;
 }
 
-.info-tile {
+.info-tile { //TODO: change to flex with row-reverse
+    display: grid;
+    justify-items: center;
+    align-items: center;
     margin-bottom: 2em;
 
     @include wide-screen {
-        display: flex;
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "last first";
         margin-bottom: 0;
 
-        &:nth-child(2) {
-            flex-direction: row-reverse;
+        .first-pos {
+            grid-area: first;
+        }
+
+        .last-pos {
+            grid-area: last;
         }
     }
 
     &__img {
-        min-width: 50%;
-        flex: 1;
+        height: 100%;
     }
 
     &__wrapper {
-        flex: 1;
-        padding: 1.75em 1em;
+        margin: 1.75em 1em;
 
         @include wide-screen {
-            padding: 2em 9%;
+            width: 65%;
         }
     }
- 
+
     &__subtitle {
         font-size: $font-size-large;
         font-weight: bold;
@@ -267,7 +272,12 @@
     &__description {
         font-size: $font-size-medium;
         margin-top: 1em;
+        margin-bottom: 2.25em;
         margin-bottom: 10%;
+
+        @include wide-screen {
+            margin-bottom: 1em;
+        }
     }
 }
 
