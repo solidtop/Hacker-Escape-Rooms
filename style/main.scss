@@ -236,12 +236,10 @@
     display: grid;
     justify-items: center;
     align-items: center;
-    margin-bottom: 2em;
 
     @include wide-screen {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "last first";
-        margin-bottom: 0;
 
         .first-pos {
             grid-area: first;
@@ -278,6 +276,10 @@
         @include wide-screen {
             margin-bottom: 1em;
         }
+    }
+
+    .btn {
+        margin: 1em 0;
     }
 }
 
