@@ -233,34 +233,29 @@
 }
 
 .info-tile {
-    display: grid;
-    justify-items: center;
-    align-items: center;
     margin-bottom: 2em;
 
     @include wide-screen {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "last first";
+        display: flex;
+        align-items: center;
         margin-bottom: 0;
 
-        .first-pos {
-            grid-area: first;
-        }
-
-        .last-pos {
-            grid-area: last;
+        &:nth-child(2) {
+            flex-direction: row-reverse;
         }
     }
 
     &__img {
-        height: 100%;
+        min-width: 50%;
+        flex: 1;
     }
 
     &__wrapper {
-        margin: 1.75em 1em;
+        flex: 1;
+        padding: 1.75em 1em;
 
         @include wide-screen {
-            width: 65%;
+            padding: 2em 9%;
         }
     }
  
@@ -272,12 +267,7 @@
     &__description {
         font-size: $font-size-medium;
         margin-top: 1em;
-        margin-bottom: 2.25em;
         margin-bottom: 10%;
-
-        @include wide-screen {
-            margin-bottom: 1em;
-        }
     }
 }
 
