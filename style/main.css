@@ -160,15 +160,17 @@ a {
 
 .challenge-cards-container {
   display: flex;
+  justify-content: safe center;
   padding: 0 2em;
   overflow: scroll;
 }
 
 .challenge-card {
+  max-width: 363px;
   min-width: 363px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  margin: 1.2em;
+  margin: 1.3em;
 }
 .challenge-card__banner {
   border-radius: 8px 8px 0 0;

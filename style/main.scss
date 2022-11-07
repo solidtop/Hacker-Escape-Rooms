@@ -141,15 +141,17 @@
 
 .challenge-cards-container {
     display: flex;
+    justify-content: safe center;
     padding: 0 2em;
     overflow: scroll;
 }
 
 .challenge-card {
+    max-width: $challenge-card-width;
     min-width: $challenge-card-width;
     border-radius: $border-radius-big;
     box-shadow: 0 0 10px rgba(0, 0, 0, .25);
-    margin: 1.2em;
+    margin: 1.3em;
 
     &__banner {
         border-radius: $border-radius-big $border-radius-big 0 0;
