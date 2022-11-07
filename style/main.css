@@ -114,12 +114,6 @@ a {
   }
 }
 
-.grid {
-  display: grid;
-  gap: 0;
-  justify-items: center;
-}
-
 .quotes-container {
   display: flex;
   justify-content: center;
