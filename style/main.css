@@ -314,10 +314,10 @@ a {
 
 /* || GENERAL STYLES */
 .btn {
-  display: block;
+  display: grid;
+  place-items: center;
   width: 308px;
   height: 66px;
-  border: none;
   border-radius: 4px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -346,7 +346,7 @@ a {
 }
 @media screen and (min-width: 720px) {
   .btn--desktop {
-    display: block;
+    display: grid;
   }
 }
 

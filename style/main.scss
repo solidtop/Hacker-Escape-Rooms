@@ -232,8 +232,8 @@
     margin-bottom: 15%;
 }
 
-.info-tile { //TODO: change to flex with row-reverse
-    display: grid;
+.info-tile { 
+    display: grid; //TODO: change to flex with row-reverse
     justify-items: center;
     align-items: center;
 
@@ -308,10 +308,10 @@
 /* || GENERAL STYLES */
 
 .btn {
-    display: block;
+    display: grid;
+    place-items: center;
     width: 308px;
     height: 66px;
-    border: none;
     border-radius: $border-radius;
     font-size: $font-size-medium;
     font-weight: bold;
@@ -343,7 +343,7 @@
     display: none;
 
     @include wide-screen {
-        display: block;
+        display: grid;
     }
 }
 
