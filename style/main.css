@@ -212,7 +212,7 @@ a {
 .review-card {
   max-width: 520px;
   display: none;
-  margin: 0 1em;
+  margin: 0 1.5em;
 }
 .review-card:nth-child(1) {
   display: flex;
