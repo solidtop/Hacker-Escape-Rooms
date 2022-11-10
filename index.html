@@ -9,14 +9,16 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="./assets/logo.jpg" alt="logo"> 
-        <h1 class="header__title">Hacker Escape Rooms</h1>
-        
-        <button class="btn-hamburger" id="btn-open-nav-menu">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </button>
+        <div class="header__container container">
+            <img class="header__logo" src="./assets/logo.jpg" alt="logo"> 
+            <h1 class="header__title">Hacker Escape Rooms</h1>
+            
+            <button class="btn-hamburger" id="btn-open-nav-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </div>
     </header>
 
     <nav class="navbar nav">
@@ -41,8 +43,10 @@
     </nav>
 
     <main class="content">
-        <img class="bg-img img" src="./assets/hacker.png" alt="background image">
-        
+        <section>
+            <img class="bg-img img" src="./assets/hacker.png" alt="background image">
+        </section>
+
         <section class="challenges challenges--top">
             <a class="btn__primary--on-white btn--desktop btn" href="">Online challenges</a>
             <a class="btn__secondary--on-white btn" href="">On-site challenges</a>
@@ -141,7 +145,7 @@
             <a class="btn__primary--on-dark btn" href="">Read the full story</a>
         </section>
 
-        <section class="info-tiles-container">
+        <section class="info-tiles container">
             <article class="info-tile">
                 <img class="info-tile__img img" src="./assets/stock1.jpg" alt="stock image1">
 
@@ -165,31 +169,33 @@
     </main>
 
     <footer class="footer">
-        <section class="esc-rooms footer__section">
-            <h3 class="footer__section-headline">[Esc] Hacker Escape Rooms</h3>
-            <p class="footer__section-description">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
-        </section>
+        <div class="footer__container container">
+            <section class="esc-rooms footer__section">
+                <h3 class="footer__section-headline">[Esc] Hacker Escape Rooms</h3>
+                <p class="footer__section-description">Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+            </section>
 
-        <section class="site-map footer__section">
-            <h3 class="footer__section-headline">Site map</h3>
-            <ul class="footer__section-list">
-                <li><a href="">The Story</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">Legal</a></li>
-                <br>
-                <li><a href="">Play online</a></li>
-                <li><a href="">Play on-site</a></li>
-            </ul>
-        </section>
+            <nav class="site-map footer__section">
+                <h3 class="footer__section-headline">Site map</h3>
+                <ul class="footer__section-list">
+                    <li><a href="">The Story</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Legal</a></li>
+                    <br>
+                    <li><a href="">Play online</a></li>
+                    <li><a href="">Play on-site</a></li>
+                </ul>
+            </nav>
 
-        <section class="socials footer__section">
-            <h3 class="footer__section-headline">Follow us on</h3>
-            <ul class="footer__section-list">
-                <li><a href="">Facebook</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Twitter</a></li>
-            </ul>
-        </section>
+            <nav class="socials footer__section">
+                <h3 class="footer__section-headline">Follow us on</h3>
+                <ul class="footer__section-list">
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Twitter</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 
     <script src="./main.js" type="module"></script>

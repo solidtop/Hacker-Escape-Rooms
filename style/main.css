@@ -28,11 +28,18 @@ a {
 }
 
 /* || MIXINS */
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
 .header {
+  background-color: #011827;
+}
+.header__container {
   display: flex;
   padding: 1.25em;
   padding-bottom: 1.75em;
-  background-color: #011827;
 }
 .header__logo {
   max-width: 128px;
@@ -45,7 +52,7 @@ a {
   font-weight: bold;
   color: white;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .header__title {
     width: auto;
     font-size: 2.5rem;
@@ -56,6 +63,8 @@ a {
   background-color: #011827;
 }
 .nav__list {
+  max-width: 1280px;
+  margin-inline: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -73,7 +82,7 @@ a {
   display: none;
   padding: 1.5em 6.5em;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .navbar {
     display: block;
   }
@@ -117,7 +126,7 @@ a {
 .nav-menu--show {
   display: flex;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .nav-menu--show {
     visibility: hidden;
   }
@@ -169,7 +178,10 @@ a {
   }
 }
 .bg-img {
+  display: block;
+  max-width: 1280px;
   max-height: 468px;
+  margin-inline: auto;
 }
 
 .challenges {
@@ -188,7 +200,7 @@ a {
   text-align: center;
   text-decoration: underline;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .challenges {
     display: flex;
     justify-content: center;
@@ -221,7 +233,7 @@ a {
 .review-card:nth-child(1) {
   display: flex;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .review-card {
     display: flex;
   }
@@ -230,7 +242,7 @@ a {
   max-height: 72px;
   border-radius: 50%;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .review-card__headshot {
     max-height: 96px;
   }
@@ -286,7 +298,7 @@ a {
   margin-left: 0.5em;
   font-size: 0.875rem;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .challenge-card__rating .rating__participants {
     margin-left: auto;
   }
@@ -307,7 +319,7 @@ a {
   padding: 20% 1em;
   background-color: #011827;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .about-us {
     padding: 8em;
   }
@@ -323,13 +335,13 @@ a {
   margin: auto;
   margin-top: 2em;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .about-us .btn {
     margin-top: 1.5em;
   }
 }
 
-.info-tiles-container {
+.info-tiles {
   margin-bottom: 15%;
 }
 
@@ -338,7 +350,7 @@ a {
   justify-items: center;
   align-items: center;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .info-tile {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "last first";
@@ -356,7 +368,7 @@ a {
 .info-tile__wrapper {
   margin: 1.75em 1em;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .info-tile__wrapper {
     width: 65%;
   }
@@ -371,7 +383,7 @@ a {
   margin-bottom: 2.25em;
   margin-bottom: 10%;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .info-tile__description {
     margin-bottom: 1em;
   }
@@ -381,11 +393,13 @@ a {
 }
 
 .footer {
-  padding: 2em 1.5em;
   background-color: #011827;
 }
-@media screen and (min-width: 720px) {
-  .footer {
+.footer__container {
+  padding: 2em 1.5em;
+}
+@media screen and (min-width: 800px) {
+  .footer__container {
     display: flex;
     justify-content: space-around;
     padding: 4em 1em;
@@ -433,7 +447,7 @@ a {
 .btn--desktop {
   display: none;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .btn--desktop {
     display: grid;
   }
@@ -447,7 +461,7 @@ a {
   border: none;
   cursor: pointer;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .btn-hamburger {
     display: none;
   }
@@ -464,7 +478,7 @@ a {
   font-size: 2rem;
   font-weight: normal;
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
   .headline {
     margin: 2em 0;
     font-size: 2.25rem;
