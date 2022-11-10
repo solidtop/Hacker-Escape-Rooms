@@ -74,6 +74,7 @@
         right: 0;
         margin: 3em;
         z-index: 11;
+        opacity: 0;
     }
 
     .nav__list {
@@ -99,9 +100,12 @@
         visibility: hidden;
     }
 
-    .backdrop,
-    .btn-close {
+    .backdrop {
         animation: fade-in 1s;
+    }
+
+    .btn-close {
+        animation: fade-in .3s .2s forwards;
     }
 
     .nav__list {
@@ -179,7 +183,7 @@
 }
 
 .review-card {
-    max-width: $quote-width-max;
+    max-width: $review-card-width;
     display: none;
     margin: 0 1.5em;
 
