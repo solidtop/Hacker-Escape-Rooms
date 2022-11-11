@@ -1,0 +1,62 @@
+.popular-challenges {
+    margin-top: 6.5em;
+}
+
+.challenge-cards-container {
+    display: flex;
+    justify-content: safe center;
+    padding: 0 2em;
+    overflow: scroll;
+}
+
+.challenge-card {
+    max-width: $challenge-card-width;
+    min-width: $challenge-card-width;
+    border-radius: $border-radius-big;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+    margin: 1.3em;
+
+    &__img {
+        border-radius: $border-radius-big $border-radius-big 0 0;
+    }
+
+    &__wrapper {
+        padding: 1em;
+    }
+
+    &__subtitle {
+        font-size: $font-size-big;
+        font-weight: normal;
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+
+        .rating__star {
+            margin: 0 .3em;
+        }
+
+        .rating__participants {
+            margin-left: .5em;
+            font-size: $font-size-tiny;
+
+            @include wide-screen {
+                margin-left: auto;
+            }
+        }
+    }
+
+    &__description {
+        margin: 1.5em 0;
+        font-size: $font-size-normal;
+    }
+
+    .btn {
+        width: 180px;
+        height: 44px;
+        margin-left: auto;
+        margin-right: 0;
+        font-size: $font-size-small;
+    }
+}

@@ -1,0 +1,48 @@
+.info-tiles {
+    margin-bottom: 15%;
+}
+
+.info-tile {
+    display: grid; //TODO: change to flex with row-reverse
+    justify-items: center;
+    align-items: center;
+
+    @include wide-screen {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "last first";
+
+        .first-pos {
+            grid-area: first;
+        }
+
+        .last-pos {
+            grid-area: last;
+        }
+    }
+
+    &__img {
+        height: 100%;
+    }
+
+    &__wrapper {
+        margin: 1.75em 1em;
+
+        @include wide-screen {
+            max-width: 416px;
+        }
+    }
+
+    &__subtitle {
+        font-size: $font-size-large;
+        font-weight: bold;
+    }
+
+    &__description {
+        font-size: $font-size-medium;
+        margin-top: 1em;
+    }
+
+    .btn {
+        margin: 1em 0;
+    }
+}

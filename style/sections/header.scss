@@ -1,0 +1,27 @@
+.header {
+    background-color: $darkblue;
+
+    &__container {
+        display: flex;
+        padding: 1.25em;
+        padding-bottom: 1.75em;
+    }
+
+    &__logo {
+        max-width: $logo-width;
+        max-height: $logo-height;
+    }
+
+    &__title {
+        width: 78px;
+        margin: auto 0 0 .5em;
+        font-size: $font-size-medium;
+        font-weight: bold;
+        color: $white;
+
+        @include wide-screen {
+            width: auto;
+            font-size: $font-size-title;
+        }
+    }
+}

@@ -1,33 +1,3 @@
-$wide-screen-breakpoint: 800px;
-
-$font-size-tiny: .875rem; //14px
-$font-size-small: 1rem; //16px
-$font-size-normal: 1.125rem; //18px
-$font-size-medium: 1.5rem; //24px
-$font-size-big: 1.75rem; //28px
-$font-size-large: 2rem; //32px
-$font-size-extra-large: 2.25rem; //36px
-$font-size-title: 2.5rem; //40px
-
-$black: black;
-$white: white;
-$red: #E3170A;
-$darkblue: #011827;
-$blue: #36769D;
-$lightblue: #8ACFE5;
-
-$border: 10px;
-$border-radius: 4px;
-$border-radius-big: 8px;
-
-$logo-width: 128px;
-$logo-height: 82px;
-$bg-image-height: 468px;
-$headshot-height-min: 72px;
-$headshot-height-max: 96px;
-$review-card-width: 520px;
-$challenge-card-width: 363px;
-
 html {
     box-sizing: border-box;
     font-size: 100%;
@@ -57,10 +27,4 @@ a {
     text-decoration: none;
 }
 
-/* || MIXINS */
 
-@mixin wide-screen {
-    @media screen and (min-width: $wide-screen-breakpoint) {
-        @content;
-    }
-}

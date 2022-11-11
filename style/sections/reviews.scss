@@ -1,0 +1,41 @@
+.reviews {
+    display: flex;
+    justify-content: center;
+    margin: 4em 0;
+}
+
+.review-card {
+    max-width: $review-card-width;
+    display: none;
+    margin: 0 1.5em;
+
+    &:first-child { 
+        display: flex;
+    }
+
+    @include wide-screen {
+        display: flex;
+    }
+
+    &__headshot {
+        max-height: $headshot-height-min;
+        border-radius: 50%;
+
+        @include wide-screen {
+            max-height: $headshot-height-max;
+        }
+    }
+
+    &__blockquote {
+        margin-left: 1em;
+        font-size: $font-size-medium;
+        font-style: italic;
+    }
+
+    &__cite {
+        display: block;
+        margin-top: .3em;
+        font-size: $font-size-normal;
+        font-style: normal;
+    }
+}

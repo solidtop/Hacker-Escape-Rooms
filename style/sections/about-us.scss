@@ -1,0 +1,17 @@
+.about-us {
+    padding: 6em 1em;
+    background-color: $darkblue;
+
+    &__description {
+        max-width: 632px;
+        margin: auto;
+        font-size: $font-size-big;
+        text-align: center;
+        color: $white;
+    }
+
+    .btn {
+        margin: auto;
+        margin-top: 2em;
+    }
+}
