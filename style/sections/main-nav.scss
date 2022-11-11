@@ -26,7 +26,7 @@
         display: block;
     }
 }
-6
+
 .nav-menu {
     display: none;
     position: fixed;
@@ -77,12 +77,8 @@
         animation: fade-in 1s;
     }
 
-    .btn-close {
-        animation: fade-in .3s .2s forwards;
-    }
-
-    .nav__list {
-        animation: scale-in .3s .2s forwards;
+    .nav__list, .btn-close {
+        animation: menu-pop-in .3s .2s forwards;
     }
 }
 
@@ -96,12 +92,14 @@
     }
 }
 
-@keyframes scale-in {
+@keyframes menu-pop-in {
     from {
+        opacity: 0;
         transform: scale(.95);
     }
 
     to {
+        opacity: 1;
         transform: scale(1);
     }
 }

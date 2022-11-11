@@ -91,13 +91,13 @@ a {
 }
 
 .headline {
-  margin: 0.5em 0;
+  margin: 0.5em;
   font-size: 2rem;
   font-weight: normal;
 }
 @media screen and (min-width: 800px) {
   .headline {
-    margin: 2em 0;
+    margin: 1em;
     font-size: 2.25rem;
   }
 }
@@ -226,13 +226,9 @@ a {
   -webkit-animation: fade-in 1s;
           animation: fade-in 1s;
 }
-.nav-menu--show .btn-close {
-  -webkit-animation: fade-in 0.3s 0.2s forwards;
-          animation: fade-in 0.3s 0.2s forwards;
-}
-.nav-menu--show .nav__list {
-  -webkit-animation: scale-in 0.3s 0.2s forwards;
-          animation: scale-in 0.3s 0.2s forwards;
+.nav-menu--show .nav__list, .nav-menu--show .btn-close {
+  -webkit-animation: menu-pop-in 0.3s 0.2s forwards;
+          animation: menu-pop-in 0.3s 0.2s forwards;
 }
 
 @-webkit-keyframes fade-in {
@@ -252,19 +248,23 @@ a {
     opacity: 1;
   }
 }
-@-webkit-keyframes scale-in {
+@-webkit-keyframes menu-pop-in {
   from {
+    opacity: 0;
     transform: scale(0.95);
   }
   to {
+    opacity: 1;
     transform: scale(1);
   }
 }
-@keyframes scale-in {
+@keyframes menu-pop-in {
   from {
+    opacity: 0;
     transform: scale(0.95);
   }
   to {
+    opacity: 1;
     transform: scale(1);
   }
 }
@@ -355,7 +355,8 @@ a {
 .challenge-cards-container {
   display: flex;
   justify-content: safe center;
-  padding: 0 2em;
+  gap: 2.5em;
+  padding: 2em 3em;
   overflow: scroll;
 }
 
@@ -364,7 +365,6 @@ a {
   min-width: 363px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  margin: 1.3em;
 }
 .challenge-card__img {
   border-radius: 8px 8px 0 0;
