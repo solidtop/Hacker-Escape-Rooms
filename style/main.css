@@ -485,4 +485,7 @@ a {
 .footer__section-headline {
   margin: 0.5em 0;
   font-size: 1.125rem;
+}
+.footer a:hover {
+  color: #8ACFE5;
 }/*# sourceMappingURL=main.css.map */
