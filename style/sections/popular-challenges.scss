@@ -4,10 +4,10 @@
 
 .challenge-cards-container {
     display: flex;
-    justify-content: safe center;
     gap: 2.5em;
     padding: 2em 3em;
-    overflow: scroll;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .challenge-card {
